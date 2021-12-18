@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+</head>
+<style>
+    .Cart{
+        margin:auto;
+        display:flex;
+        justify-content:space-evenly;
+    }
+    #paySec{
+        width:30%;
+        height:400px;
+        border:1px solid black;
+    }
+    #cart-Container {
+        border:1px solid black;
+        width:66%;
+        display: grid;
+        grid-template-columns: repeat(3,30%);
+        grid-template-rows: auto;
+        justify-content: space-evenly;
+        grid-gap:20px;
+        
+    }
+    .cartProd{
+        height:450px;
+        border:1px solid #000;
+        text-align: center;
+    }
+    .cartProd img{
+        width:100%;
+        height:65%;
+        
+       
+    }
+    .cartProd h4{
+        margin:0px;
+        line-height:35px;
+        /* padding:0px; */
+    }
+    .cartProd p{
+        margin:0px;
+        /* padding:0px; */
+
+    }
+    #pay{
+  border-radius: 20px;
+  border: 0px;
+ margin: 8px;
+  padding: 6px;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 16px;
+  width: 300px;
+  text-decoration:none;
+  background-color: black;
+  color:white;
+  cursor: pointer;
+}
+#total{
+  padding: 7px;
+  font-size: 25px;
+  color: #292d35;
+
+}
+</style>
+<body><div class="Cart">
+    <div id="paySec">
+        <div id="itemTotal"></div>
+    <div id="total"></div>
+    <button id="pay">Proceed to Pay</button> 
+</div>
+    <div id="cart-Container">
+    </div>
+</div>
+    
+</body>
+</html>
+<script>
+    var products = JSON.parse(localStorage.getItem('addCartItem')) ||[];
+    displayItem(products)
+    // console.log(products);
+    function displayItem(products){
+    document.getElementById("cart-Container").innerHTML = "";
+    products.map(function(elem){
+    var mainDiv = document.createElement('div') 
+    mainDiv.setAttribute('class','cartProd');
+
+    var img= document.createElement("img");
+    img.setAttribute('src', elem.imgUrl);
+
+    var arrival = document.createElement('p')
+    arrival.textContent =elem.arrival;
+
+    var h4= document.createElement('h4')
+    h4.textContent=elem.name;
+   
+    var price = document.createElement('h4')
+    price.textContent=elem.price+`$`;
+
+    var category = document.createElement('p')
+    category.textContent=elem.category;
+   
+    mainDiv.append(img,arrival, h4, category, price);
+    document.getElementById("cart-Container").append(mainDiv);
+    
+});
+}
+var count = 0;
+var totalList = Item.reduce(function (acc, cv) {
+  count++;
+  return acc + Number(cv.price);
+}, 0);
+console.log(count);
+// console.log(total);
+document.getElementById("total").innerHTML = `<h3> Total cost is ₹ ${
+  totalList
+}</h3>`;
+
+document.getElementById("pay").addEventListener("click", function () {
+  window.location.href = "payment.html";
+});
+document.getElementById(
+  "itemTotal"
+).innerHTML = `<p>Total item (${count}-items)</p>`;
+
+document.getElementById("cross").addEventListener("click", function () {
+  window.location.href = "product.html";
+});
+
+
+
+var count = 0;
+var total1 = yourItem.reduce(function (acc, cv) {
+  count++;
+  return acc + Number(cv.price);
+}, 0);
+console.log(count);
+// console.log(total);
+document.getElementById("total").innerHTML = `<h3> Total cost is ₹ ${
+  total1 
+}</h3>`;
+
+document.getElementById("checkout").addEventListener("click", function () {
+  window.location.href = "payment.html";
+});
+document.getElementById(
+  "totalitem"
+).innerHTML = `<p>Total item (${count}-items)</p>`;
+
+document.getElementById("check").addEventListener("click", function () {
+  window.location.href = "product.html";
+});
+
+</script>

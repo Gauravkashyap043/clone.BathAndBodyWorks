@@ -1,0 +1,364 @@
+*{
+    font-family:Arial, Helvetica, sans-serif;
+}
+.menubar {
+    /* border:1px solid black; */
+    width:90%;
+    margin:auto;
+    
+}
+.bathnbody{
+    /* border:1px solid red; */
+    width:98%;
+    /* height:100px; */
+    margin:auto;
+    display:flex;
+    justify-content: space-between;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+
+}
+.logo{
+    /* border:1px solid red; */
+    width:35%;
+    height:60px;
+    margin-left:28%;
+
+}
+.account{
+    /* border:1px solid red; */
+    width:35%;
+    display:flex;
+    justify-content: space-evenly;
+}
+.topnav {
+overflow: hidden;
+/* background-color: #e9e9e9; */
+width:290px;
+/* padding-bottom:10px; */
+/* border-radius:20px; */
+border:1px solid black;
+}
+
+.topnav a {
+float: left;
+display: block;
+color: black;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+
+.topnav a:hover {
+background-color: #ddd;
+color: black;
+}
+
+.topnav a.active {
+background-color: #2196F3;
+color: white;
+}
+
+
+
+.topnav input[type=text] {
+/* padding: 6px; */
+margin-top: 8px;
+font-size: 17px;
+border: none;
+/* border-radius:20px; */
+}
+
+.topnav .search-container button {
+
+/* padding: 6px 10px; */
+/* margin-top: 8px; */
+margin-right: 16px;
+background: #ddd;
+font-size: 17px;
+border: none;
+cursor: pointer;
+border-radius:15px;
+}
+
+.topnav .search-container button:hover {
+background: #ccc;
+}
+
+
+#mycart{
+   cursor:pointer;
+}
+nav{
+   width:90%;
+   margin:auto;
+   /* border:1px solid green; */
+}
+.navbar {
+overflow: hidden;
+
+}
+
+.navbar a {
+float: left;
+font-size: 16px;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+.dropdown {
+float: left;
+overflow: hidden;
+
+}
+
+.dropdown .dropbtn {
+font-size: 16px;  
+border: none;
+outline: none;
+color: black;
+padding: 14px 16px;
+
+font-family: inherit;
+margin: 0;
+margin-left:30px;
+background-color:white;
+cursor: pointer;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+
+border-bottom:2px solid green;
+}
+
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+float: none;
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+.dropdown-content a:hover {
+background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+.dropbtn-menubar {
+/* background-color: #04AA6D; */
+color: black;
+/* padding: 16px; */
+font-size: 16px;
+/* border: 1px solid red; */
+cursor:pointer;
+}
+
+/* .dropdown {
+position: relative;
+display: inline-block;
+} */
+
+.dropdown-menubar-content {
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-menubar-content a {
+color: rgba(44, 36, 36, 0.897);
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.dropdown-menubar-content a:hover {
+background-color: #ddd;
+color:rgb(34, 34, 253);
+}
+
+.dropdown-menubar:hover .dropdown-menubar-content {
+display: block;
+}
+#gift{
+color:green;
+}
+#offer{
+color:red;
+}
+#mycart{
+width: 100px;
+height:50px
+}
+#mycart img{
+width:100%;
+height: 100%;
+}
+/*<---------------- header css ends ----------> */
+/* ====================signup start ===================*/
+.signUpCont{
+    margin: auto;
+    /* border: 1px solid red; */
+    width:70%;
+    margin-top: 80px;
+}
+.signUpCont h2{
+    margin-bottom:0px;
+    padding:0px;
+
+}
+#hello-there{
+    width:100%;
+    height:150px;
+}
+.signup-details{
+    margin: auto;
+    /* border: 1px solid black; */
+    width:60%;
+    height:500px;
+    /* margin-top: 10px; */
+}
+.signup-details input{
+    width:90%;
+    height:40px;
+}
+.signup-details button{
+    background-color: gray;
+    margin-left:25%;
+    width: 50%;
+    height:40px;
+    
+    
+}
+.signup-details button:hover{
+    color:white;
+    background-color:black;
+}
+.signup-details h4{
+    text-align:center;
+    font-weight: 100;
+    
+}
+.signup-details h4 a{
+    color:#575454;
+}
+.signup-details h4 a:hover{
+    color:black;
+}
+/* ===============================signup end========================== */
+  /* footer css Start */
+
+
+  .footerCont{
+    /* border:1px solid black; */
+    margin:auto;
+    width:80%;
+    /* height:500px; */
+    display:flex;
+    justify-content:space-between;
+}
+.terms{
+    /* border:1px solid black; */
+    margin:auto;
+    margin-top:20px;
+    width:80%;
+    /* height:500px; */
+    /* display:flex; */
+    /* align-content: flex-end; */
+    height:100px;
+    color:#000000cc;
+    background-color:rgba(201, 185, 185, 0.432);
+    
+    
+}
+.terms div{
+    border-right:2px solid #000000cc;
+    margin-right:5px;
+    padding-right:5px;
+    height:30%;
+    margin-top:10px;
+    display:inline-block;
+}
+.terms div a{
+    
+    font-size: 12px;
+    text-decoration:none;
+    color:#000000cc;
+    
+}
+.terms span{
+    font-size: 12px;
+}
+.info{
+    /* border:1px solid black; */
+    width: 30%;
+    padding:10px;
+}
+
+form p{
+    padding:0px;
+    margin-bottom:1px;
+    
+}
+.query{
+    /* border:1px solid black; */
+    width:65%;
+}
+/* #email, #emailConfirm{
+    width:80%;
+} */
+/* .last-inline{
+    float:left;
+} */
+#list-inline > li{
+float: left!important;
+width: 36px;
+height: 36px;
+margin-right: 15px;
+padding:5px;
+
+
+}
+#list-inline{
+    list-style: none;
+    margin-right:20px;
+    padding:0px;
+}
+.query{
+    /* border:1px solid red; */
+    display:flex;
+    justify-content:space-evenly;
+}
+.help ul{
+    list-style:none;
+    margin-right:0px;
+    padding-left:0px;
+    padding-top:2px;
+}
+.help ul li{
+    padding-top:5px;
+    color:#1d1616cc;
+}
+input[type="submit"]{
+    width:100px;
+    height:30px;
+    background-color:black;
+    color:white;
+}
